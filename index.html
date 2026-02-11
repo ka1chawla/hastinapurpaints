@@ -24,7 +24,15 @@
       <nav class="nav" id="nav">
         <ul class="nav-list">
           <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
+          <li class="nav-item-dropdown">
+            <a href="about.html" class="nav-dropdown-trigger" id="about-trigger" aria-haspopup="true" aria-expanded="false">About Us</a>
+            <ul class="nav-dropdown" id="about-dropdown">
+              <li><strong>Founder:</strong> Atul Jain</li>
+              <li><a href="mailto:atuljain2065@gmail.com">atuljain2065@gmail.com</a></li>
+              <li><a href="tel:+918595810482">8595810482</a></li>
+              <li><a href="about.html">About our company</a></li>
+            </ul>
+          </li>
           <li><a href="contact.html">Contact Us</a></li>
         </ul>
       </nav>
@@ -32,24 +40,14 @@
   </header>
 
   <main>
-    <section class="hero">
+    <section class="hero hero-merged">
       <div class="container hero-inner">
         <h1 class="hero-title">Eco-friendly paints from cow for your home</h1>
         <p class="hero-subtitle">
           Natural cow-based paints – safe, durable, and beautiful. Lab-tested, VOC-free, and kind to the planet.
         </p>
-        <div class="hero-cta">
-          <a href="contact.html" class="btn">Contact us</a>
-          <a href="about.html" class="btn">Learn more</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section features-section">
-      <div class="container">
-        <h2 class="section-title">Why choose eco paint?</h2>
-        <p class="section-subtitle">Quality, sustainability, and care for your family – all in one.</p>
-        <div class="features-grid">
+        <p class="hero-benefits-intro">Quality, sustainability, and care for your family – all in one.</p>
+        <div class="features-grid features-in-hero">
           <div class="feature-card">
             <h3>Eco-friendly & non-toxic</h3>
             <p>Made with natural ingredients, free from harmful chemicals. Safe for your family and the environment.</p>

@@ -24,7 +24,15 @@
       <nav class="nav" id="nav">
         <ul class="nav-list">
           <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
+          <li class="nav-item-dropdown">
+            <a href="about.html" class="nav-dropdown-trigger" id="about-trigger" aria-haspopup="true" aria-expanded="false">About Us</a>
+            <ul class="nav-dropdown" id="about-dropdown">
+              <li><strong>Founder:</strong> Atul Jain</li>
+              <li><a href="mailto:atuljain2065@gmail.com">atuljain2065@gmail.com</a></li>
+              <li><a href="tel:+918595810482">8595810482</a></li>
+              <li><a href="about.html">About our company</a></li>
+            </ul>
+          </li>
           <li><a href="contact.html">Contact Us</a></li>
         </ul>
       </nav>
@@ -39,17 +47,18 @@
           Get in touch for quotes, product enquiries, or to find out more about our eco-friendly cow-based paints. We'll get back to you within 24 hours.
         </p>
         <div class="contact-grid">
-          <div class="contact-details">
+          <div class="contact-details" id="contact-details">
             <h2>Contact details</h2>
-            <p><strong>Phone:</strong> +91 XXXXX XXXXX</p>
-            <p><strong>Email:</strong> info@hastinapurpaints.com</p>
-            <p><strong>Address:</strong><br />Hastinapur Paints<br />[Your address here]</p>
+            <p><strong>Founder:</strong> <span id="contact-founder">Atul jain</span></p>
+            <p><strong>Phone:</strong> <span id="contact-phone">+91 8595810482</span></p>
+            <p><strong>Email:</strong> <a href="mailto:atuljain2065@gmail.com" id="contact-email">atuljain2065@gmail.com</a></p>
+            <p><strong>Address:</strong><br /><span id="contact-address">Jain Mandir, Hastinapur, UP</span></p>
           </div>
           <div class="contact-form-wrap" id="contact-form-wrap">
             <div class="form-message success hidden" id="form-success">
               <p>Thank you! We have received your message and will get back to you within 24 hours.</p>
             </div>
-            <form class="contact-form" id="contact-form" action="#" method="post">
+            <form class="contact-form" id="contact-form" action="#" method="post" novalidate>
               <label>
                 Name *
                 <input type="text" name="name" required placeholder="Your name" />
@@ -97,5 +106,6 @@
   </footer>
 
   <script src="js/main.js"></script>
+  <script src="js/contact-page.js"></script>
 </body>
 </html>

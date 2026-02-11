@@ -24,14 +24,5 @@
     yearEl.textContent = new Date().getFullYear();
   }
 
-  // Contact form: show success message, hide form
-  var form = document.getElementById('contact-form');
-  var formSuccess = document.getElementById('form-success');
-  if (form && formSuccess) {
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      form.classList.add('hidden');
-      formSuccess.classList.remove('hidden');
-    });
-  }
+  // Contact form is handled by contact-page.js on the Contact page
 })();

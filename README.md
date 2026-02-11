@@ -31,3 +31,10 @@ Then visit http://localhost:8000
 5. Save. The site will be at `https://<username>.github.io/<repo>/`.
 
 All links use relative paths (`index.html`, `about.html`, `assets/...`), so the site works correctly on GitHub Pages with no extra configuration.
+
+## Contact form (store submissions in backend)
+
+The contact form submits to a backend URL so submissions are stored instead of downloading a file. Configure the URL in **`data/contact-details.json`**:
+
+- **Option A – Formspree (no server):** Sign up at [formspree.io](https://formspree.io), create a form that emails you (e.g. atuljain2065@gmail.com), and copy your form ID. In `data/contact-details.json` set `"formSubmitUrl": "https://formspree.io/f/YOUR_FORM_ID"` (replace `YOUR_FORM_ID` with your ID). Submissions are stored in Formspree’s dashboard and emailed to you.
+- **Option B – Your own backend:** If you have an API or server that accepts POST form data, set `formSubmitUrl` to that endpoint (e.g. `"https://your-api.com/contact"`). The form sends `name`, `email`, `phone`, and `message`.
