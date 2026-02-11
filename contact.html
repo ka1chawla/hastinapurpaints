@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet" />
+  <title>Contact Us – Hastinapur Paints</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo-link" aria-label="Hastinapur Paints – Home">
+        <img src="assets/hastinapur-logo.png" alt="Hastinapur Paints" class="logo-img" />
+      </a>
+      <button type="button" class="menu-toggle" aria-expanded="false" aria-label="Toggle menu">
+        <span class="menu-toggle-bar"></span>
+        <span class="menu-toggle-bar"></span>
+        <span class="menu-toggle-bar"></span>
+      </button>
+      <nav class="nav" id="nav">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section contact-section">
+      <div class="container">
+        <h1 class="section-title">Contact Us</h1>
+        <p class="section-subtitle">
+          Get in touch for quotes, product enquiries, or to find out more about our eco-friendly cow-based paints. We'll get back to you within 24 hours.
+        </p>
+        <div class="contact-grid">
+          <div class="contact-details">
+            <h2>Contact details</h2>
+            <p><strong>Phone:</strong> +91 XXXXX XXXXX</p>
+            <p><strong>Email:</strong> info@hastinapurpaints.com</p>
+            <p><strong>Address:</strong><br />Hastinapur Paints<br />[Your address here]</p>
+          </div>
+          <div class="contact-form-wrap" id="contact-form-wrap">
+            <div class="form-message success hidden" id="form-success">
+              <p>Thank you! We have received your message and will get back to you within 24 hours.</p>
+            </div>
+            <form class="contact-form" id="contact-form" action="#" method="post">
+              <label>
+                Name *
+                <input type="text" name="name" required placeholder="Your name" />
+              </label>
+              <label>
+                Email *
+                <input type="email" name="email" required placeholder="your@email.com" />
+              </label>
+              <label>
+                Phone *
+                <input type="tel" name="phone" required placeholder="+91 XXXXX XXXXX" />
+              </label>
+              <label>
+                Message
+                <textarea name="message" rows="4" placeholder="Your message or enquiry..."></textarea>
+              </label>
+              <button type="submit" class="btn">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="assets/heipl-logo.png" alt="HEIPL – Our eco brand" class="footer-logo" />
+        <p class="footer-tagline">Our eco brand – Sustainable paints from nature</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+      <div class="footer-contact">
+        <p>Get in touch for quotes and enquiries.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="copyright">© <span id="year"></span> Hastinapur Paints. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
