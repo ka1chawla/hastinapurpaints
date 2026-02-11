@@ -167,7 +167,7 @@ img {
 
 /* Header – clean, professional */
 .header {
-  background: linear-gradient(180deg, #40916c 0%, #2d6a4f 100%);
+  background: var(--color-primary);
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
   position: sticky;
   top: 0;
@@ -472,8 +472,8 @@ main {
 
 /* Hero */
 .hero {
-  background: linear-gradient(135deg, #7a9b4f 0%, #90be6d 40%, #6b8e23 100%);
-  color: var(--color-surface);
+  background: transparent;
+  color: var(--color-text);
   padding: 4rem 0;
 }
 
@@ -491,7 +491,7 @@ main {
 .hero-subtitle {
   font-size: 1.1rem;
   margin: 0 0 1.5rem;
-  opacity: 0.95;
+  color: var(--color-text-muted);
   max-width: 560px;
   margin-left: auto;
   margin-right: auto;
@@ -544,7 +544,7 @@ main {
 
 .hero-benefits-intro {
   margin: 1.5rem 0 1rem;
-  opacity: 0.95;
+  color: var(--color-text-muted);
   font-size: 1rem;
 }
 
